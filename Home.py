@@ -118,6 +118,6 @@ st.markdown(
     <br>
     <h6><a href="https://github.com/Avel1956/SENECA-NET" target="_blank">GitHub Repo</a></h6>
     <h6><a href="https://www.udea.edu.co/wps/portal/udea/web/inicio/investigacion/seneca" target="_blank">SÉNECA</a></h6>
-    <h6>Disclaimer: Esta aplicación está an desarrollo, si observa algún error, por favor contactar a jaime.velezz@udea.edu.co</h6>
+    <h6>*Aviso*: Esta aplicación está aún en desarrollo, si observa algún error, por favor contactar a jaime.velezz@udea.edu.co</h6>
     """, unsafe_allow_html=True
     )
