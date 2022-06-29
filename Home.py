@@ -9,7 +9,7 @@ from networkx.readwrite.json_graph.node_link import node_link_data
 from pyvis.network import Network
 
 # Read dataset (CSV)
-df_interact = pd.read_csv('input\\PRODUCTOS_CLEAN29_06_2022.csv')
+df_interact = pd.read_csv('PRODUCTOS_CLEAN29_06_2022.csv')
 
 # Set header title
 st.title('Visualización de la red de colaboración de la Alianza SÉNECA')
