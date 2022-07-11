@@ -10,7 +10,7 @@ from pyvis.network import Network
 
 
 # Leer el archivo (CSV)
-df_interact = pd.read_csv('input\\PRODUCTOS_CLEAN29_06_2022.csv')
+df_interact = pd.read_csv('PRODUCTOS_CLEAN29_06_2022.csv')
 
 # Título de la página 
 with st.sidebar:
