@@ -1,6 +1,5 @@
 <div id="top"></div>
 
-
 <!-- PROJECT SHIELDS -->
 
 <!--
@@ -46,10 +45,11 @@
     <li>
       <a href="#Acerca del proyecto">Acerca del proyecto</a>
       <ul>
-        <li><a href="#Construido con">Construido con</a></li>
+        <li><a href="#Construido con:">Construido con</a></li>
       </ul>
     </li>
 </li>
+<li><a href="#Inicio rápido">Inicio rápido</a></li>
 <li><a href="#uso">Uso</a></li>
 <li><a href="#Por hacer">Por hacer</a></li>
 <li><a href="#Contribuir">Contribuir</a></li>
@@ -120,21 +120,13 @@ La mejor forma de contribuir al proyecto en este punto del desarrollo consiste e
 
 <p align="right">(<a href="#top">Inicio</a>)</p>
 
-<!-- LICENSE -->
-
-## Licencia
-
-Distributed under the MIT License. See `LICENSE.txt` for more information.
-
-<p align="right">(<a href="#top">Inicio</a>)</p>
-
 <!-- CONTACT -->
 
 ## Contacto
 
 Jaime Andrés Vélez Zea   - [@javelezea](https://twitter.com/javelezea)
 
-Sitio de la Alianza: [SENECA]([Seneca](https://www.udea.edu.co/wps/portal/udea/web/inicio/investigacion/seneca))
+Sitio de la Alianza: [SENECA](https://www.udea.edu.co/wps/portal/udea/web/inicio/investigacion/seneca)
 
 <p align="right">(<a href="#top">Inicio</a>)</p>
 
