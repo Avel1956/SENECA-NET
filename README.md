@@ -1,6 +1,6 @@
 # SENECA-NET
 
-## Obtenció de los datos
+## Obtención de los datos
 
 Todos los productos de la Alianza son reportados por los investigadores principales de cada proyecto a la Subdirección de Fortalecimiento Institucional a traves de la herramienta SSOFI. En el caso particular de la producción de nuevo conocimiento y ponencias, se almacena además de los datos básicos de cada producto, una copia en PDF del artículo o certificado usado como prueba de existencia.
 
