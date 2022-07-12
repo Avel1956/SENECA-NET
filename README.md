@@ -1,11 +1,5 @@
 <div id="top"></div>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
+
 
 <!-- PROJECT SHIELDS -->
 
@@ -18,7 +12,6 @@
 -->
 
 [![Contributors][contributors-shield]][contributors-url]
-
 
 <!-- PROJECT LOGO -->
 
@@ -40,17 +33,18 @@
     ·
     <a href="https://github.com/github_usernamAvel1956ues">Reportar errores</a>
     ·
-    <a href="https://github.com/github_username/repo_Avel1956gerir mejoras</a>
+    <a href="https://github.com/github_username/repo_Avel1956">gerir mejoras</a>
   </p>
 </div>
 
 <!-- TABLE OF CONTENTS -->
 
+<p align="left">
 <details>
   <summary>Tabla de contenidos</summary>
   <ol>
     <li>
-      <a href="#acerca del proyecto">Acerca del proyecto</a>
+      <a href="#Acerca del proyecto">Acerca del proyecto</a>
       <ul>
         <li><a href="#Construido con">Construido con</a></li>
       </ul>
@@ -62,8 +56,7 @@
 <li><a href="#Licencia">Licencia</a></li>
 <li><a href="#Contacto">Contacto</a></li>
 <li><a href="#Agradecimientos">Agradecimientos</a></li>
-
-
+</p>
 
 </ol>
 </details>
@@ -78,13 +71,13 @@ La creación de una red científica con el alcance y la envergadura de SENECA es
 
 En este caso, se presenta una herramienta para la construcción y análisis de la red de coautorías de la Alianza con el fin de ofrecer alternativas de representación del desempeño relacional de personas, grupos e instituciones  que puedan ser tenidas en cuenta en la toma de decisiones y la formulación de estrategias de cooperaciones futuras.  
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">Inicio</a>)</p>
 
 ### Construido con:
 
 * [Python 3](python.org)
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">Inicio</a>)</p>
 
 <!-- GETTING STARTED -->
 
@@ -96,7 +89,7 @@ Puede comenzar [aquí](https://avel1956-seneca-net-home-6v56a3.streamlitapp.com/
 
 Esta aplicación no requiere mas que un navegador y acceso a internet.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">Inicio</a>)</p>
 
 <!-- USAGE EXAMPLES -->
 
@@ -104,7 +97,7 @@ Esta aplicación no requiere mas que un navegador y acceso a internet.
 
 Puede seleccionar el tipo de red 
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">Inicio</a>)</p>
 
 <!-- ROADMAP -->
 
@@ -117,7 +110,7 @@ Puede seleccionar el tipo de red
 - [ ] Ampliar en número de parámetros a calcular. 
 - [ ] Mejora en la interactividad.  
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">Inicio</a>)</p>
 
 <!-- CONTRIBUTING -->
 
@@ -125,25 +118,25 @@ Puede seleccionar el tipo de red
 
 La mejor forma de contribuir al proyecto en este punto del desarrollo consiste en reportar cualquier error en los nombres de personas, grupos o instituciones que forman parte de la red. Si usted pertenece a la Alianza y detecta algún error, por favor no dude en reportarlo a [jaime.velezz@udea.edu.co]([jaime.velezz@udea.edu.co](mailto:jaime.velezz@udea.edu.co)).
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">Inicio</a>)</p>
 
 <!-- LICENSE -->
 
-## License
+## Licencia
 
 Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">Inicio</a>)</p>
 
 <!-- CONTACT -->
 
-## Contact
+## Contacto
 
-Your Name - [@javelezea](https://twitter.com/twit@javelezeaemail@email_client.com)
+Jaime Andrés Vélez Zea   - [@javelezea](https://twitter.com/javelezea)
 
-Project Link: [https://github.com/Avel1956/SENECA-NET](https://github.com/github_Avel1956ame)
+Sitio de la Alianza: [SENECA]([Seneca](https://www.udea.edu.co/wps/portal/udea/web/inicio/investigacion/seneca))
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">Inicio</a>)</p>
 
 <!-- ACKNOWLEDGMENTS -->
 
@@ -153,7 +146,7 @@ Project Link: [https://github.com/Avel1956/SENECA-NET](https://github.com/github
 * []()
 * []()
 
-<p align="right">(<a href="#top">back to top</a>)</p>
+<p align="right">(<a href="#top">Inicio</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
