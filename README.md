@@ -18,10 +18,7 @@
 -->
 
 [![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+
 
 <!-- PROJECT LOGO -->
 
@@ -58,7 +55,6 @@
         <li><a href="#Construido con">Construido con</a></li>
       </ul>
     </li>
-
 </li>
 <li><a href="#uso">Uso</a></li>
 <li><a href="#Por hacer">Por hacer</a></li>
@@ -66,6 +62,8 @@
 <li><a href="#Licencia">Licencia</a></li>
 <li><a href="#Contacto">Contacto</a></li>
 <li><a href="#Agradecimientos">Agradecimientos</a></li>
+
+
 
 </ol>
 </details>
@@ -103,8 +101,6 @@ Esta aplicación no requiere mas que un navegador y acceso a internet.
 <!-- USAGE EXAMPLES -->
 
 ## Uso
-
-
 
 Puede seleccionar el tipo de red 
 
