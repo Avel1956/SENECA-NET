@@ -12,12 +12,16 @@
 
 [![Contributors][contributors-shield]][contributors-url]
 
+
+
+
+
 <!-- PROJECT LOGO -->
 
 <br />
 <div align="center">
   <a href="https://github.com/Avel1956/SENECA-NET">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/senlogo.png" alt="Logo">
   </a>
 
 <h3 align="center">SENECA-NET</h3>
@@ -63,13 +67,23 @@
 
 <!-- ABOUT THE PROJECT -->
 
+
+
+
+
 ****
 
 ## Acerca del proyecto
 
+
+
+
+
 > Esta es una versión temprana de la aplicación y está en desarrollo activo, por lo que es de esperarse que existan errores. [Su retroalimentación es esencial](#contribuir).   
 
 ![](images/2022-07-12-16-35-41-image.png)
+
+
 
 La creación de una red científica con el alcance y la envergadura de SENECA es no solo un reto monumental desde el punto de vista científico, sino también una rara oportunidad de estudiar la evolución de una red de estas características durante la ejecución del proyecto marco.
 
