@@ -43,13 +43,13 @@
   <summary>Tabla de contenidos</summary>
   <ol>
     <li>
-      <a href="#Acerca del proyecto">Acerca del proyecto</a>
+      <a href="## Acerca del proyecto">Acerca del proyecto</a>
       <ul>
-        <li><a href="#Construido con:">Construido con</a></li>
+        <li><a href="### Construido con:">Construido con</a></li>
       </ul>
     </li>
 </li>
-<li><a href="#Inicio rápido">Inicio rápido</a></li>
+<li><a href="## Inicio rápido">Inicio rápido</a></li>
 <li><a href="#uso">Uso</a></li>
 <li><a href="#Por hacer">Por hacer</a></li>
 <li><a href="#Contribuir">Contribuir</a></li>
