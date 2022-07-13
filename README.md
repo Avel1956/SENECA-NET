@@ -10,8 +10,6 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-
-
 <!-- PROJECT LOGO -->
 
 <br />
@@ -100,7 +98,7 @@ Esta aplicación no requiere mas que un navegador y acceso a internet.
 
 De acuerdo a su sistema y la calidad de su conexión, la red puede tomar **uno o dos minutos** en cargar dado que por defecto muestra la red mas compleja de todas las disponibles. Una vez hecha esta carga inicial, puede interactuar con las opciones de segmentación y selección del panel lateral.
 
-Puede seleccionar el tipo de red basado en el nivel de relacionamiento que desee consultar:
+> Puede seleccionar el tipo de red basado en el nivel de relacionamiento que desee consultar:
 
 - Red de autores
 
@@ -108,7 +106,7 @@ Puede seleccionar el tipo de red basado en el nivel de relacionamiento que desee
 
 - Red de instituciones
 
-Puede segmentar la red resultante según el tipo de producto de colaboración:
+> Puede segmentar la red resultante según el tipo de producto de colaboración:
 
 - Todos
 
@@ -126,7 +124,9 @@ Puede segmentar la red resultante según el tipo de producto de colaboración:
 
 - Ponencia 
 
-Puede filtrar por periodo y visualizar la evolución de la red durante la ejecución.  
+> Puede filtrar por periodo y visualizar la evolución de la red durante la ejecución.  
+
+
 
 <p align="right">(<a href="#top">Inicio</a>)</p>
 
