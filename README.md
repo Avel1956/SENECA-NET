@@ -45,7 +45,7 @@
     <li>
       <a href="#acerca-del-proyecto">Acerca del proyecto</a>
       <ul>
-        <li><a href="#construido">Construido con</a></li>
+        <li><a href="#construido-con">Construido con</a></li>
       </ul>
     </li>
 </li>
@@ -63,7 +63,11 @@
 
 <!-- ABOUT THE PROJECT -->
 
+****
+
 ## Acerca del proyecto
+
+> Esta es una versión temprana de la aplicación y está en desarrollo activo, por lo que es de esperarse que existan errores. [Su retroalimentación es esencial](#contribuir).   
 
 ![](images/2022-07-12-16-35-41-image.png)
 
