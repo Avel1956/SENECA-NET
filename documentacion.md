@@ -1,6 +1,6 @@
 # SENECA-NET
 
-> Esta pagina esta en **construcción**
+> Esta página está en **construcción**
 
 ## Obtención de los datos
 
@@ -9,7 +9,6 @@ Todos los productos de la Alianza son reportados por los investigadores principa
 ## Preprocesamiento
 
 Dada la heterogeneidad de las revistas y congresos en los cuales se presentan los resultados de la investigación de la Alianza, se decide recurrir a la obtención manual de los datos de autores, afiliaciones (grupo de investigación, institución), nombre de la revista (o congreso) y factor de impacto (en caso de tenerlo).
-
 
 ![](images/2022-07-13-07-12-08-index.png)
 
@@ -28,6 +27,7 @@ El procesamiento de los datos en detalle puede seguirse en los comentarios del c
 - Para cada producto se crea una red en la cual varios coautores (*nodos*) están conectados entre si por bordes (*edges*).
 
 - Dado que las relaciones son simétricas (todos los autores se consideran igual de importantes), la red resultante es adireccional.
+
 - La red global es la suma de las redes de cada producto, solo se conserva una conexión por cada par de nodos y el borde resultante tiene las características del ultimo producto en el cual dicho par haya aparecido.
 
 ![](images/2022-07-13-08-22-28-index.png)
