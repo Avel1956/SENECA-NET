@@ -27,14 +27,14 @@ El procesamiento de los datos en detalle puede seguirse en los comentarios del c
 
 - Para cada producto se crea una red en la cual varios coautores (*nodos*) están conectados entre si por bordes (*edges*).
 
-
-
 - Dado que las relaciones son simétricas (todos los autores se consideran igual de importantes), la red resultante es adireccional.
 - La red global es la suma de las redes de cada producto, solo se conserva una conexión por cada par de nodos y el borde resultante tiene las características del ultimo producto en el cual dicho par haya aparecido.
+
+![](images/2022-07-13-08-22-28-index.png)
 
 ## Visualización
 
 El código de la aplicación esta escrito en Python 3 y la mayor parte del procesamiento se hace usando [Pandas](https://pandas.pydata.org/) y [Networkx](https://networkx.org/), sin embargo la representación de los datos de la red de forma atractiva e interactiva requiere el uso de dos módulos en particular:
 
-- [**Pyvis**:]([Interactive network visualizations &mdash; pyvis 0.1.3.1 documentation](https://pyvis.readthedocs.io/en/latest/#)) este modulo permite la generación de gráficos de red altamente personalizables a partir de una red creada en Networkx, heredando las características de esta. Permite guardar la red resultante como una pagina HTLM que puede visualizarse en cualquier navegador usando los recursos computacionales del usuario y, particularmente, permite insertar el grafico en  cualquier aplicación web.
+- [**Pyvis**:](https://pyvis.readthedocs.io/en/latest/#) este modulo permite la generación de gráficos de red altamente personalizables a partir de una red creada en Networkx, heredando las características de esta. Permite guardar la red resultante como una pagina HTLM que puede visualizarse en cualquier navegador usando los recursos computacionales del usuario y, particularmente, permite insertar el grafico en  cualquier aplicación web.
 - [**Streamlit:**](https://streamlit.io/) este modulo ofrece la posibilidad de crear una UI que permite al usuario interactuar con la red y analizarla desde una pagina web albergada online.
