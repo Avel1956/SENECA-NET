@@ -12,10 +12,6 @@
 
 [![Contributors][contributors-shield]][contributors-url]
 
-
-
-
-
 <!-- PROJECT LOGO -->
 
 <br />
@@ -32,11 +28,11 @@
     <a href="https://github.com/Avel1956/SENECA-NET"><strong>Documentación »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_Avel1956ame">Usar aplicación</a>
+    <a href="https://avel1956-seneca-net-home-6v56a3.streamlitapp.com/">Usar aplicación</a>
     ·
-    <a href="https://github.com/github_usernamAvel1956ues">Reportar errores</a>
-    ·
-    <a href="https://github.com/github_username/repo_Avel1956">gerir mejoras</a>
+    <a href="#contribuir">Reportar errores</a>
+    
+   
   </p>
 </div>
 
@@ -67,23 +63,15 @@
 
 <!-- ABOUT THE PROJECT -->
 
-
-
-
-
 ****
 
+
+
 ## Acerca del proyecto
-
-
-
-
 
 > Esta es una versión temprana de la aplicación y está en desarrollo activo, por lo que es de esperarse que existan errores. [Su retroalimentación es esencial](#contribuir).   
 
 ![](images/2022-07-12-16-35-41-image.png)
-
-
 
 La creación de una red científica con el alcance y la envergadura de SENECA es no solo un reto monumental desde el punto de vista científico, sino también una rara oportunidad de estudiar la evolución de una red de estas características durante la ejecución del proyecto marco.
 
@@ -113,7 +101,37 @@ Esta aplicación no requiere mas que un navegador y acceso a internet.
 
 ## Uso
 
-Puede seleccionar el tipo de red 
+De acuerdo a su sistema y la calidad de su conexión, la red puede tomar **uno o dos minutos** en cargar dado que por defecto muestra la red mas compleja de todas las disponibles. Una vez hecha esta carga inicial, puede interactuar con las opciones de segmentación y selección del panel lateral.
+
+Puede seleccionar el tipo de red basado en el nivel de relacionamiento que desee consultar:
+
+- Red de autores
+
+- Red de grupos `Experimental!`
+
+- Red de instituciones
+
+Puede segmentar la red resultante según el tipo de producto de colaboración:
+
+- Todos
+
+- Artículo A1
+
+- Artículo A1
+
+- Artículo A1
+
+- Artículo A1
+
+- Capítulo de libro A1
+
+- Capítulo de libro A1
+
+- Ponencia 
+
+Puede filtrar por periodo y visualizar la evolución de la red durante la ejecución.  
+
+
 
 <p align="right">(<a href="#top">Inicio</a>)</p>
 
@@ -159,5 +177,3 @@ Sitio de la Alianza: [SENECA](https://www.udea.edu.co/wps/portal/udea/web/inicio
 <p align="right">(<a href="#top">Inicio</a>)</p>
 
 <!-- MARKDOWN LINKS & IMAGES -->
-
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
