@@ -43,15 +43,15 @@
   <summary>Tabla de contenidos</summary>
   <ol>
     <li>
-      <a href="# Acerca del proyecto">Acerca del proyecto</a>
+      <a href="#Acerca">Acerca del proyecto</a>
       <ul>
-        <li><a href="# Construido con:">Construido con</a></li>
+        <li><a href="#Construido">Construido con</a></li>
       </ul>
     </li>
 </li>
-<li><a href="# Inicio rápido">Inicio rápido</a></li>
+<li><a href="#Inicio">Inicio rápido</a></li>
 <li><a href="#uso">Uso</a></li>
-<li><a href="#Por hacer">Por hacer</a></li>
+<li><a href="#Por">Por hacer</a></li>
 <li><a href="#Contribuir">Contribuir</a></li>
 <li><a href="#Licencia">Licencia</a></li>
 <li><a href="#Contacto">Contacto</a></li>
@@ -132,7 +132,7 @@ Sitio de la Alianza: [SENECA](https://www.udea.edu.co/wps/portal/udea/web/inicio
 
 <!-- ACKNOWLEDGMENTS -->
 
-## Acknowledgments
+## Agradecimientos
 
 * []()
 * []()
