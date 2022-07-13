@@ -10,7 +10,7 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-[![Contributors][contributors-shield]][contributors-url]
+
 
 <!-- PROJECT LOGO -->
 
@@ -25,15 +25,14 @@
 <p align="center">
     Herramienta de visualización y análisis de la red de colaboración científica de la Alianza.  
     <br />
-    <a href="https://github.com/Avel1956/SENECA-NET"><strong>Documentación »</strong></a>
+    <a href="documentacion.md"><strong>Documentación »</strong></a>
     <br />
     <br />
     <a href="https://avel1956-seneca-net-home-6v56a3.streamlitapp.com/">Usar aplicación</a>
     ·
     <a href="#contribuir">Reportar errores</a>
-    
-   
-  </p>
+
+</p>
 </div>
 
 <!-- TABLE OF CONTENTS -->
@@ -64,8 +63,6 @@
 <!-- ABOUT THE PROJECT -->
 
 ****
-
-
 
 ## Acerca del proyecto
 
@@ -130,8 +127,6 @@ Puede segmentar la red resultante según el tipo de producto de colaboración:
 - Ponencia 
 
 Puede filtrar por periodo y visualizar la evolución de la red durante la ejecución.  
-
-
 
 <p align="right">(<a href="#top">Inicio</a>)</p>
 
