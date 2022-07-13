@@ -112,15 +112,15 @@ De acuerdo a su sistema y la calidad de su conexión, la red puede tomar **uno o
 
 - Artículo A1
 
-- Artículo A1
+- Artículo A2
 
-- Artículo A1
+- Artículo B
 
-- Artículo A1
-
-- Capítulo de libro A1
+- Artículo C
 
 - Capítulo de libro A1
+
+- Capítulo de libro A2
 
 - Ponencia 
 
@@ -132,6 +132,9 @@ De acuerdo a su sistema y la calidad de su conexión, la red puede tomar **uno o
 
 ## Por hacer
 
+
+
+- [x] Implementación de la primera versión de la aplicación con análisis e interactividad básicos.
 - [ ] Perfeccionamiento del *dataset*.
 - [ ] Usar técnicas de NPL para construir red semántica.
 - [ ] Incorporar funcionalidades de predicción de nodos y bordes.  
