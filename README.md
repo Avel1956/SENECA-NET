@@ -76,7 +76,7 @@ En este caso, se presenta una herramienta para la construcción y análisis de l
 
 ### Construido con:
 
-* [Python 3](python.org)
+* [Python 3](https://www.python.org/)
 
 <p align="right">(<a href="#top">Inicio</a>)</p>
 
@@ -125,8 +125,6 @@ De acuerdo a su sistema y la calidad de su conexión, la red puede tomar **uno o
 - Ponencia 
 
 > Puede filtrar por periodo y visualizar la evolución de la red durante la ejecución.  
-
-
 
 <p align="right">(<a href="#top">Inicio</a>)</p>
 
