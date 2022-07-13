@@ -43,19 +43,19 @@
   <summary>Tabla de contenidos</summary>
   <ol>
     <li>
-      <a href="#Acerca">Acerca del proyecto</a>
+      <a href="#acerca-del-proyecto">Acerca del proyecto</a>
       <ul>
-        <li><a href="#Construido">Construido con</a></li>
+        <li><a href="#construido">Construido con</a></li>
       </ul>
     </li>
 </li>
-<li><a href="#Inicio">Inicio rápido</a></li>
+<li><a href="#inicio-rápido">Inicio rápido</a></li>
 <li><a href="#uso">Uso</a></li>
-<li><a href="#Por">Por hacer</a></li>
-<li><a href="#Contribuir">Contribuir</a></li>
-<li><a href="#Licencia">Licencia</a></li>
-<li><a href="#Contacto">Contacto</a></li>
-<li><a href="#Agradecimientos">Agradecimientos</a></li>
+<li><a href="#por-hacer">Por hacer</a></li>
+<li><a href="#contribuir">Contribuir</a></li>
+<li><a href="#licencia">Licencia</a></li>
+<li><a href="#contacto">Contacto</a></li>
+<li><a href="#agradecimientos">Agradecimientos</a></li>
 </p>
 
 </ol>
