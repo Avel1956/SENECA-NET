@@ -132,8 +132,6 @@ De acuerdo a su sistema y la calidad de su conexión, la red puede tomar **uno o
 
 ## Por hacer
 
-
-
 - [x] Implementación de la primera versión de la aplicación con análisis e interactividad básicos.
 - [ ] Perfeccionamiento del *dataset*.
 - [ ] Usar técnicas de NPL para construir red semántica.
@@ -166,9 +164,12 @@ Sitio de la Alianza: [SENECA](https://www.udea.edu.co/wps/portal/udea/web/inicio
 
 ## Agradecimientos
 
-* []()
-* []()
-* []()
+* [Universidad de Antioquia](https://www.udea.edu.co/wps/portal/udea/web/inicio/investigacion/seneca)
+* Programa Ecosistema Científico
+  
+  Minciencias
+  (Contrato No. FP44842-218-2018).
+* 
 
 <p align="right">(<a href="#top">Inicio</a>)</p>
 
