@@ -215,7 +215,7 @@ autores_net.save_graph('output\\htmlgraph.html')
 HtmlFile = open('output\\htmlgraph.html', 'r', encoding='utf-8')
 
 # Cargar el archivo HTML en un componente HTML en Streamlit
-components.html(HtmlFile.read(), height=600)
+components.html(HtmlFile.read(), height=590)
  
 col1, col2 = st.columns(2)
 with col1:
