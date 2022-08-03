@@ -193,7 +193,7 @@ red_metrics_df = pd.DataFrame(data = red_metrics)
 #\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 # inicialización del objeto pyvis
 autores_net = Network(height='600px',
-                       width='150%',
+                       width='600px',
                        bgcolor='#0c1b33',
                        
                        font_color='white'
