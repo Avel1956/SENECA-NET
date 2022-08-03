@@ -113,7 +113,7 @@ def sel_prop(net, name):
     #Aplicacion del valor de seleccion al nodo seleccionado
     net.nodes[name]["sel"] = 1
     #Aplicacion de color al nodo (y los bordes conectados a este)
-    net.nodes[name]["color"] = '#690500'
+    net.nodes[name]["color"] = '#B2F227'
          
            
     
