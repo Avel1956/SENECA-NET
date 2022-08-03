@@ -109,11 +109,11 @@ def sel_prop(net, name):
     #nx.set_edge_attributes(net, '#8E9F7D1', "color"  )
     nx.set_node_attributes(net, 0, "sel")
     #vector inicial de colores
-    nx.set_node_attributes(net, 'white', "color")
+    nx.set_node_attributes(net, '#FA7921', "color")
     #Aplicacion del valor de seleccion al nodo seleccionado
     net.nodes[name]["sel"] = 1
     #Aplicacion de color al nodo (y los bordes conectados a este)
-    net.nodes[name]["color"] = '#B2F227'
+    net.nodes[name]["color"] = '#690500'
          
            
     
