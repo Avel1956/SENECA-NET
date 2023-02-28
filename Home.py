@@ -2,11 +2,12 @@ import streamlit as st
 
 import pandas as pd
 from pandas_profiling import ProfileReport
+from streamlit_pandas_profiling import st_profile_report
 import seaborn as sns
 import matplotlib.pyplot as plt
 import os
 import openpyxl
-from streamlit_pandas_profiling import st_profile_report
+
 
 def read_excel_file(file_path):
     wb_obj = openpyxl.load_workbook(file_path)
@@ -160,8 +161,15 @@ def main():
         st.write("### Perfilamiento")
         profile = st.checkbox("Hacer perfilamiento")
         if profile:
-            pr = ProfileReport(df)
+            pr = ProfileReport(df, title="Reporte de dataset")
             st_profile_report(pr)
+            #dialogo para guardar el reporte
+            report_name = st.text_input("Entre el nombre del reporte")
+            if report_name:
+                report_path = f"{report_name}.html"
+                st.write(f"Guardando reporte en {report_path}")
+                pr.to_file(output_file=report_path)
+            
         analysis_type = select_analysis_type()
         if analysis_type == "Una columna":
             options = select_single_column(df)
