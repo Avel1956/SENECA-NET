@@ -26,6 +26,12 @@ def read_excel_file(file_path):
     cols = next(data)[0:]
     df = pd.DataFrame(data, columns=cols)
     st.write("### Estado del dataset")
+    dft_copy = df.copy()
+    # all the columns are string
+    for col in dft_copy.columns:
+        dft_copy[col] = dft_copy[col].astype(str)
+    # check if there are empty cells
+    
     st.write(df.head())
     st.write("### Valores nulos")
     st.write(df.isnull().sum())
