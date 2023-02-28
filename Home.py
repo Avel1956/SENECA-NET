@@ -39,8 +39,7 @@ def read_excel_file(file_path):
     st.write(df.duplicated().sum())
     st.write("### Valores unicos")
     st.write(df.nunique())
-    st.write("### Tipos de datos")
-    st.write(df.dtypes)
+    
     return df
 # def to clean the data
 def clean_data(df):
