@@ -25,8 +25,48 @@ def read_excel_file(file_path):
     
     cols = next(data)[0:]
     df = pd.DataFrame(data, columns=cols)
+    st.write("### Estado del dataset")
+    st.write(df.head())
+    st.write("### Valores nulos")
+    st.write(df.isnull().sum())
+    st.write("### Valores duplicados")
+    st.write(df.duplicated().sum())
+    st.write("### Valores unicos")
+    st.write(df.nunique())
+    st.write("### Tipos de datos")
+    st.write(df.dtypes)
     return df
+# def to clean the data
+def clean_data(df):
+    # Select box to select the columns to clean
+    st.write("### Seleccione columnas a limpiar")
+    columns_to_clean = st.multiselect("Seleccione columnas", df.columns)
+    # Select box to select the cleaning method
+    st.write("### Seleccione metodo de limpieza")
+    cleaning_method = st.selectbox(
+        "Seleccione metodo de limpieza",
+        ["Eliminar filas vacias", "Sustituir valores vacios con NAN","Eliminar columnas", "Eliminar filas", "Eliminar duplicados", "Unify types"]
+    
+    )
+    # Apply the cleaning method
+    if cleaning_method == "Eliminar filas vacias":
+        df.dropna(inplace=True)
+    elif cleaning_method == "Sustituir valores vacios con NAN":
+        df.fillna("NAN", inplace=True)
+    elif cleaning_method == "Eliminar columnas":
+        df.drop(columns_to_clean, axis=1, inplace=True)
+    elif cleaning_method == "Eliminar filas":
+        df.drop(columns_to_clean, axis=0, inplace=True)
+    elif cleaning_method == "Eliminar duplicados":
+        df.drop_duplicates(inplace=True)
+    elif cleaning_method == "Unify types":
+        df[columns_to_clean] = df[columns_to_clean].astype(str)
+    st.write("### Estado del dataset")
+    st.write(df.head())
+    return df
+    
 
+    
 def show_basic_statistics(df):
     st.write("### Estadísticas básicas")
     st.write(df.describe())
@@ -128,7 +168,7 @@ def main():
         st.write("### Guardar figura")
         chart_name = st.text_input("Entre el nombre de la figura")
         if chart_name:
-            chart_path = f"{chart_name}.html"
+            chart_path = f"{chart_name}.png"
             st.write(f"Guardando figura en {chart_path}")
             plt.savefig(chart_path, bbox_inches="tight")
         st.write("### Reiniciar la aplicación")
