@@ -32,7 +32,7 @@ def read_excel_file(file_path):
         dft_copy[col] = dft_copy[col].astype(str)
     # check if there are empty cells
     
-    st.write(df.head())
+    st.write(dft_copy.head())
     st.write("### Valores nulos")
     st.write(df.isnull().sum())
     st.write("### Valores duplicados")
