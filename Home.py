@@ -163,12 +163,11 @@ def main():
         if profile:
             pr = ProfileReport(df, title="Reporte de dataset")
             st_profile_report(pr)
-            #dialogo para guardar el reporte
-            report_name = st.text_input("Entre el nombre del reporte")
-            if report_name:
-                report_path = f"{report_name}.html"
-                st.write(f"Guardando reporte en {report_path}")
-                pr.to_file(output_file=report_path)
+            #dialogo para descargar el reporte como html
+            if st.button("Descargar reporte"):
+                pr.to_file("reporte.html")
+
+        
             
         analysis_type = select_analysis_type()
         if analysis_type == "Una columna":
