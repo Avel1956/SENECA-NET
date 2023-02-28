@@ -1,4 +1,5 @@
 streamlit==1.10.0
+streamlit-pandas-profiling == 0.0.2
 pandas==1.4.4
 networkx== 2.8.4
 pyvis==0.2.1
