@@ -213,7 +213,7 @@ def main():
             new_section = create_report_section(section_name, section_op, section_data)
             saved_sections.append(new_section)
             
-    # add the new section to a list of sections or store it in a database
+    
 
         st.write("### Reiniciar la aplicación")
         restart = st.button("Presione para reiniciar")
