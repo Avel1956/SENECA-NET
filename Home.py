@@ -203,16 +203,7 @@ def main():
             plt.savefig(chart_path, bbox_inches="tight")
         
         st.write("### Guardar analisis")
-        saved_sections = []
-        if st.button("Save Analysis"):
-            section_name = analysis_type
-            
-            section_op = options
-            section_data = df # or whichever data you want to save
-            
-            new_section = create_report_section(section_name, section_op, section_data)
-            saved_sections.append(new_section)
-            
+       
     
 
         st.write("### Reiniciar la aplicación")
