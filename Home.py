@@ -10,9 +10,9 @@ import openpyxl
 
 
 class ReportSection:
-    def __init__(self, name, description, options, data):
+    def __init__(self, name, options, data):
         self.name = name
-        self.description = description
+        #self.description = description
         self.options = options
         self.result = None
         self.figure = None
@@ -210,7 +210,7 @@ def main():
             section_op = options
             section_data = df # or whichever data you want to save
             
-            new_section = create_report_section(section_name, section_desc, section_op, section_data)
+            new_section = create_report_section(section_name, section_op, section_data)
             saved_sections.append(new_section)
             
     # add the new section to a list of sections or store it in a database
