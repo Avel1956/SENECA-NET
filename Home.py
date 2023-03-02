@@ -208,8 +208,11 @@ def main():
             section_desc = st.text_input("Enter section description:")
             section_op = st.text_input("Enter analysis operation:")
             section_data = df # or whichever data you want to save
-            new_section = create_report_section(section_name, section_desc, section_op, section_data)
-            saved_sections.append(new_section)
+            accept = st.button("Accept")
+            if accept:
+                new_section = create_report_section(section_name, section_desc, section_op, section_data)
+                saved_sections.append(new_section)
+            
     # add the new section to a list of sections or store it in a database
 
         st.write("### Reiniciar la aplicación")
