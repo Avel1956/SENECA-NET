@@ -210,10 +210,8 @@ def main():
             section_op = options
             section_data = df # or whichever data you want to save
             
-            accept = st.button("Accept")
-            if accept:
-                new_section = create_report_section(section_name, section_desc, section_op, section_data)
-                saved_sections.append(new_section)
+            new_section = create_report_section(section_name, section_desc, section_op, section_data)
+            saved_sections.append(new_section)
             
     # add the new section to a list of sections or store it in a database
 
