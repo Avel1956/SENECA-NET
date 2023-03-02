@@ -184,6 +184,15 @@ def main():
             #dialogo para descargar el reporte como html
             if st.button("Descargar reporte"):
                 pr.to_file("reporte.html")
+                with open("reporte.html", "rb") as f:
+                    file_bytes = f.read()
+                st.download_button(
+                    label="Descargar reporte",
+                    data=file_bytes,
+                    file_name="reporte.html",
+                    mime="text/html"
+                )
+                
 
         
             
