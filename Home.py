@@ -170,7 +170,7 @@ def generate_chart(df, analysis_type, options):
 
 def main():
 
-    saved_sections = []
+    
     st.title("Herramienta de analisis de datos")
     file_path = st.file_uploader("Suba el archivo", type=["xlsx"])
     if file_path is not None:
@@ -203,10 +203,15 @@ def main():
             plt.savefig(chart_path, bbox_inches="tight")
         
         st.write("### Guardar analisis")
+        saved_sections = []
         if st.button("Save Analysis"):
             section_name = st.text_input("Enter section name:")
-            section_desc = st.text_input("Enter section description:")
-            section_op = st.text_input("Enter analysis operation:")
+            if section_name:
+                section_name = section_name.replace(" ", "_")
+                section_desc = st.text_input("Enter section description:")
+                if section_desc:
+                    section_desc = section_desc.replace(" ", "_")
+                    section_op = st.text_input("Enter analysis operation:")
             section_data = df # or whichever data you want to save
             accept = st.button("Accept")
             if accept:
