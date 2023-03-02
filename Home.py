@@ -221,24 +221,50 @@ def main():
             os._exit(0)
     with st.sidebar:
         st.header("Saved Sections")
-        try:
+        saved_sections = []  # moved here to keep track of saved sections
+        sections_container = st.empty()  # container to show the saved sections
+        
+        if st.button("Save Analysis"):
+            section_name = analysis_type
+                
+            section_op = options
+            section_data = df # or whichever data you want to save
+                
+            new_section = create_report_section(section_name, section_op, section_data)
+            saved_sections.append(new_section)
+
+        # Show the saved sections
+        if saved_sections:
+            st.subheader("Reorder, Edit or Delete sections:")
             for i, section in enumerate(saved_sections):
-                st.subheader(f"{i+1}. {section.name}")
-                st.write(f"Description: {section.description}")
-                st.write(f"Created At: {section.created_at}")
-                if st.button("Edit"):
-                    # show inputs to edit the section and update it in the list
-                    section_name = st.text_input("Enter section name:", section.name)
-                    #section_desc = st.text_input("Enter section description:", section.description)
-                    section_op = st.text_input("Enter analysis operation:", section.operation)
+                # Create a card for each section
+                card = st.beta_container()
+                with card:
+                    st.write(f"{i+1}. {section.name}")
+                    st.write(f"Description: {section.description}")
+                    st.write(f"Created At: {section.created_at}")
+                    if st.button("Edit"):
+                        # Show inputs to edit the section and update it in the list
+                        section_name = st.text_input("Enter section name:", section.name)
+                        section_op = st.text_input("Enter analysis operation:", section.operation)
+                        section.data = st.text_input("Enter data:", section.data)
+                        section.created_at = datetime.datetime.now()
+                        saved_sections[i] = ReportSection(section_name, section_op, section.data)
+                    if st.button("Delete"):
+                        # Remove the section from the list of saved sections
+                        saved_sections.pop(i)
+                        break
+
+                # Reorder the sections
+                new_order = st.sidebar.selectbox("Reorder sections:", [i+1 for i in range(len(saved_sections))], index=None)
+                if new_order:
+                    saved_sections = [saved_sections[i-1] for i in new_order]
                     
-                    saved_sections[i] = ReportSection(section_name, section_op, section_data)
-                if st.button("Delete"):
-                    # remove the section from the list of saved sections
-                    saved_sections.pop(i)
-                    break
-        except:
-            st.write("No hay secciones guardadas todavia.")
+                # Update the container with the saved sections
+                sections_container.write("Saved Sections:")
+                for i, section in enumerate(saved_sections):
+                    sections_container.write(f"{i+1}. {section.name}")
+
 if __name__ == "__main__":
     main()
 
