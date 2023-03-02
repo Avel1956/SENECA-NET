@@ -225,35 +225,39 @@ def main():
             saved_sections.append(new_section)
 
         # Show the saved sections
-        with st.sidebar:
-            st.header("Saved Sections")
-            if saved_sections:
-                section_order = [i+1 for i in range(len(saved_sections))]
-                new_order = st.sidebar.selectbox("Reorder sections:", section_order, index=None)
-                if new_order is not None:
-                    saved_sections.insert(new_order-1, saved_sections.pop(section_order.index(new_order)))
-            else:
-                st.write("No sections saved yet.")
-            try:
-                for i, section in enumerate(saved_sections):
-                    st.subheader(f"{i+1}. {section.name}")
-                    st.write(f"Description: {section.description}")
+        if saved_sections:
+            st.subheader("Reorder, Edit or Delete sections:")
+            for i, section in enumerate(saved_sections):
+                # Create a card for each section
+                card = st.container()
+                with card:
+                    st.write(f"{i+1}. {section.name}")
+                    st.write(f"Description: {section.options}")
                     st.write(f"Created At: {section.created_at}")
                     if st.button("Edit"):
-                        # show inputs to edit the section and update it in the list
+                        # Show inputs to edit the section and update it in the list
                         section_name = st.text_input("Enter section name:", section.name)
-                        #section_desc = st.text_input("Enter section description:", section.description)
-                        section_op = st.text_input("Enter analysis operation:", section.options)
-                        
+                        section_op = st.text_input("Enter analysis operation:", section.operation)
+                        section.data = st.text_input("Enter data:", section.data)
+                        section.created_at = datetime.datetime.now()
                         saved_sections[i] = ReportSection(section_name, section_op, section.data)
                     if st.button("Delete"):
-                        # remove the section from the list of saved sections
+                        # Remove the section from the list of saved sections
                         saved_sections.pop(i)
                         break
-            except:
-                st.write("No sections saved yet.")
 
+                # Reorder the sections
+                new_order = st.sidebar.selectbox("Reorder sections:", [i+1 for i in range(len(saved_sections))], index=None)
+                if new_order:
+                    saved_sections = [saved_sections[i-1] for i in new_order]
+                    
+                # Update the container with the saved sections
+                sections_container.write("Saved Sections:")
+                for i, section in enumerate(saved_sections):
+                    sections_container.write(f"{i+1}. {section.name}")
 
+        else:
+            st.subheader("No saved sections yet.")  # if there are no saved sections
 if __name__ == "__main__":
     main()
 
