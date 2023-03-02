@@ -229,7 +229,7 @@ def main():
             st.subheader("Reorder, Edit or Delete sections:")
             for i, section in enumerate(saved_sections):
                 # Create a card for each section
-                card = st.beta_container()
+                card = st.container()
                 with card:
                     st.write(f"{i+1}. {section.name}")
                     st.write(f"Description: {section.description}")
