@@ -229,9 +229,9 @@ def main():
                 if st.button("Edit"):
                     # show inputs to edit the section and update it in the list
                     section_name = st.text_input("Enter section name:", section.name)
-                    section_desc = st.text_input("Enter section description:", section.description)
+                    #section_desc = st.text_input("Enter section description:", section.description)
                     section_op = st.text_input("Enter analysis operation:", section.operation)
-                    section_data = section.data # or allow the user to upload a new file or select new data
+                    
                     saved_sections[i] = ReportSection(section_name, section_op, section_data)
                 if st.button("Delete"):
                     # remove the section from the list of saved sections
