@@ -19,8 +19,8 @@ class ReportSection:
         self.data = data
         self.created_at = datetime.datetime.now()
 
-def create_report_section(name, description, operation, data):
-    section = ReportSection(name, description, operation, data)
+def create_report_section(name,  operation, data):
+    section = ReportSection(name, operation, data)
     return section
 
 def read_excel_file(file_path):
