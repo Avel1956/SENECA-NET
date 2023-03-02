@@ -17,7 +17,7 @@ class ReportSection:
         self.result = None
         self.figure = None
         self.data = data
-        self.created_at = datetime.now()
+        self.created_at = datetime.datetime.now()
 
 def create_report_section(name, description, operation, data):
     section = ReportSection(name, description, operation, data)
