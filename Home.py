@@ -1,5 +1,5 @@
 import streamlit as st
-
+import datetime
 import pandas as pd
 from pandas_profiling import ProfileReport
 from streamlit_pandas_profiling import st_profile_report
@@ -8,6 +8,20 @@ import matplotlib.pyplot as plt
 import os
 import openpyxl
 
+
+class ReportSection:
+    def __init__(self, name, description, operation, data):
+        self.name = name
+        self.description = description
+        self.operation = operation
+        self.result = None
+        self.figure = None
+        self.data = data
+        self.created_at = datetime.now()
+
+def create_report_section(name, description, operation, data):
+    section = ReportSection(name, description, operation, data)
+    return section
 
 def read_excel_file(file_path):
     wb_obj = openpyxl.load_workbook(file_path)
@@ -152,7 +166,11 @@ def generate_chart(df, analysis_type, options):
             sns.heatmap(df[columns].corr(), annot=True, ax=ax)
             st.pyplot(fig)
 
+
+
 def main():
+
+    saved_sections = []
     st.title("Herramienta de analisis de datos")
     file_path = st.file_uploader("Suba el archivo", type=["xlsx"])
     if file_path is not None:
@@ -183,11 +201,38 @@ def main():
             chart_path = f"{chart_name}.png"
             st.write(f"Guardando figura en {chart_path}")
             plt.savefig(chart_path, bbox_inches="tight")
+        
+        st.write("### Guardar analisis")
+        if st.button("Save Analysis"):
+            section_name = st.text_input("Enter section name:")
+            section_desc = st.text_input("Enter section description:")
+            section_op = st.text_input("Enter analysis operation:")
+            section_data = df # or whichever data you want to save
+            new_section = create_report_section(section_name, section_desc, section_op, section_data)
+            saved_sections.append(new_section)
+    # add the new section to a list of sections or store it in a database
+
         st.write("### Reiniciar la aplicación")
         restart = st.button("Presione para reiniciar")
         if restart:
             os._exit(0)
-
+    with st.sidebar:
+        st.header("Saved Sections")
+        for i, section in enumerate(saved_sections):
+            st.subheader(f"{i+1}. {section.name}")
+            st.write(f"Description: {section.description}")
+            st.write(f"Created At: {section.created_at}")
+            if st.button("Edit"):
+                # show inputs to edit the section and update it in the list
+                section_name = st.text_input("Enter section name:", section.name)
+                section_desc = st.text_input("Enter section description:", section.description)
+                section_op = st.text_input("Enter analysis operation:", section.operation)
+                section_data = section.data # or allow the user to upload a new file or select new data
+                saved_sections[i] = ReportSection(section_name, section_desc, section_op, section_data)
+            if st.button("Delete"):
+                # remove the section from the list of saved sections
+                saved_sections.pop(i)
+                break
 if __name__ == "__main__":
     main()
 
