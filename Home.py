@@ -232,7 +232,7 @@ def main():
                 card = st.container()
                 with card:
                     st.write(f"{i+1}. {section.name}")
-                    st.write(f"Description: {section.operation}")
+                    st.write(f"Description: {section.options}")
                     st.write(f"Created At: {section.created_at}")
                     if st.button("Edit"):
                         # Show inputs to edit the section and update it in the list
