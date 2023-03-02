@@ -10,10 +10,10 @@ import openpyxl
 
 
 class ReportSection:
-    def __init__(self, name, description, operation, data):
+    def __init__(self, name, description, options, data):
         self.name = name
         self.description = description
-        self.operation = operation
+        self.options = options
         self.result = None
         self.figure = None
         self.data = data
@@ -205,14 +205,11 @@ def main():
         st.write("### Guardar analisis")
         saved_sections = []
         if st.button("Save Analysis"):
-            section_name = st.text_input("Enter section name:")
-            if section_name:
-                section_name = section_name.replace(" ", "_")
-                section_desc = st.text_input("Enter section description:")
-                if section_desc:
-                    section_desc = section_desc.replace(" ", "_")
-                    section_op = st.text_input("Enter analysis operation:")
+            section_name = analysis_type
+            
+            section_op = options
             section_data = df # or whichever data you want to save
+            
             accept = st.button("Accept")
             if accept:
                 new_section = create_report_section(section_name, section_desc, section_op, section_data)
